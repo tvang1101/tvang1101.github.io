@@ -1,0 +1,413 @@
+<html>
+<head>
+	<title>Design 3</title>
+	<link rel="stylesheet" type="text/css" href="customized.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/unsemantic-grid-responsive.css" media="screen" title="no title" charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+	<div id="mobilebar" class="hide-on-desktop hide-on-tablet">
+		<div class="mobilebarsocial">
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook fa-2x"><span class="hidden">Facebook</span></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter fa-2x"><span class="hidden">Twitter</span></i></a></li>
+				<li><a href="#"><i class="fa fa-pinterest fa-2x"><span class="hidden">Pinterest</span></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube fa-2x"><span class="hidden">YouTube</span></i></a></li>
+			</ul>
+		</div>
+		<div class="mobilebarnav">
+			<ul>
+				<li><a href="#"><i class="fa fa-phone fa-2x"><span class="hidden">Phone</span></i></a></li>
+				<li><a href="#"><i class="fa fa-map-marker fa-2x"><span class="hidden">Map</span></i></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="grid-container headercontainer">
+		<div class="grid-40 tablet-grid-40">
+			<div class="headerlogo">
+				<a href="/"><img src="images/logo.png" width="237" height="77" alt="METADATASTORENAME" /></a>
+			</div>
+		</div>
+		<div class="grid-60 tablet-grid-60">
+			<div class="topnav">
+				<ul>
+					<li class="hide-on-mobile"><a href="#">Design &amp; Inspire</a></li>
+					<li class="hide-on-mobile"><a href="#" target="_blank">Room Planner</a></li>
+					<li><a class="accountnav" href="javascript:void(0)">My Account</a>
+						<ul>
+							<li><a href="#">Log In</a></li>
+							<li><a href="#">Register</a></li>
+							<li><a href="#">Favorites</a></li>
+						</ul>
+					</li>
+					<li class="hide-on-mobile"><a href="#">Contact Us</a></li>
+					<li>
+						<a href="#">View Cart <i class="fa fa-shopping-cart"><span class="hidden">View Cart</span></i> (<viewCartQuantitysummary/>)</a>
+					</li>
+				</ul>
+			</div>
+			<div class="headersearch">
+				<label class="hidden" for="SearchValue">Search</label>
+				<input type="text" id="SearchValue" name="SearchValue" onkeypress="submitsearch(event);" value="" />
+				<span class="fa fa-search" onclick="goSearch();"></span>
+			</div>
+		</div><div class="clear"></div>
+	</div>
+	<div class="navborder">
+		<div class="grid-container">
+			<div class="grid-100">
+				<div id="mainnav" class="hide-on-mobile no-print">
+					<ul>
+						<li><a href="#">Living Room</a>
+							<ul>
+								<li><a href="#">Sofas</a></li>
+								<li><a href="#">Sectionals</a></li>
+								<li><a href="#">Chairs</a></li>
+								<li><a href="#">Recliners</a></li>
+								<li><a href="#">Ottomans</a></li>
+								<li><a href="#">Benches</a></li>
+								<li><a href="#">Tables</a></li>
+								<li><a href="#">Storage</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Dining Room</a>
+							<ul>
+								<li><a href="#">Dining Table</a></li>
+								<li><a href="#">Chairs</a></li>
+								<li><a href="#">China Cabinets</a></li>
+								<li><a href="#">Buffets</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Bedroom</a>
+							<ul>
+								<li><a href="#">Beds</a></li>
+								<li><a href="#">Nightstands</a></li>
+								<li><a href="#">Dressers</a></li>
+								<li><a href="#">Mirrors</a></li>
+								<li><a href="#">Chests</a></li>
+								<li><a href="#">Mattresses</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Entertainment</a>
+							<ul>
+								<li><a href="#">TV Stands</a></li>
+								<li><a href="#">TV Console</a></li>
+								<li><a href="#">Wall Units</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Home Office</a>
+							<ul>
+								<li><a href="#">Desks</a></li>
+								<li><a href="#">Office Chairs</a></li>
+								<li><a href="#">File Cabinets</a></li>
+								<li><a href="#">Chests</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Mattresses</a></li>
+						<li><a href="#">Accessories</a>
+							<ul>
+								<li><a href="#">Rugs</a></li>
+								<li><a href="#">Lighting</a></li>
+								<li><a href="#">Accessories</a></li>
+							</ul>
+						</li>
+						<li><a class="navpromo" href="#">On Sale</a></li>
+					</ul>
+				</div>
+				<div id="mobilenav" class="hide-on-desktop hide-on-tablet no-print">
+					<ul>
+						<li><a href="javascript:void(0)"><i class="fa fa-bars fa-1x"></i> Menu</a>
+							<ul>
+								<li><a href="#">Living Room</a></li>
+								<li><a href="#">Dining Room</a></li>
+								<li><a href="#">Bedroom</a></li>
+								<li><a href="#">Entertainment</a></li>
+								<li><a href="#">Home Office</a></li>
+								<li><a href="#">Mattresses</a></li>
+								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Room Planner</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div class="grid-container">
+		<div class="grid-100">
+			<div id="homebanner">
+				<img src="images/homeslide1.jpg" alt="Homepage Hero" />
+			</div><div class="clear"></div>
+		</div>
+		<div class="grid-66 tablet-grid-66">
+			<div class="shopbyroomcontent shopbyroomcontent-lg">
+				<div class="shopbyroompic">
+					<a href="#"><img src="images/homebanner1.jpg" width="779" height="673" alt="Dining Room Banner" /></a>
+				</div>
+				<div class="shopbyroomtitle shopbyroomtitlefocused">
+					<h2>Kitchen +<br />Dining Furniture</h2>
+					<a href="#">Shop Now >></a>
+				</div>
+			</div>
+		</div>
+		<div class="grid-33 tablet-grid-33">
+			<div class="shopbyroomcontent">
+				<div class="shopbyroompic">
+					<a href="#"><img src="images/homebanner2.jpg" width="379" height="326" alt="Home Office Banner" /></a>
+				</div>
+				<div class="shopbyroomtitle banner-spotlight">
+					<h3 class="titlebackground">Spotlight On</h3>
+					<h2 class="spotlighttext">Home Office</h2>
+					<a href="#">Shop Now >></a>
+				</div>
+			</div>
+			<div class="shopbyroomcontent">
+				<div class="shopbyroompic">
+					<a href="#"><img src="images/homebanner3.jpg" width="379" height="326" alt="Home Entertainnment Banner" /></a>
+				</div>
+				<div class="shopbyroomtitle">
+					<h2>Home Entertainment</h2>
+					<a href="#">Shop Now >></a>
+				</div>
+			</div>
+		</div><div class="clear"></div>
+		<div class="grid-50 tablet-grid-50">
+			<div class="shopbyroomcontent">
+				<div class="shopbyroompic">
+					<a href="#"><img src="images/homebanner4.jpg" width="579" height="323" alt="Living Room Banner" /></a>
+				</div>
+				<div class="shopbyroomtitle">
+					<h2>Living Room</h2>
+					<a href="#">Shop Now >></a>
+				</div>
+			</div>
+		</div>
+		<div class="grid-50 tablet-grid-50">
+			<div class="shopbyroomcontent">
+				<div class="shopbyroompic">
+					<a href="#"><img src="images/homebanner5.jpg" width="579" height="323" alt="Bedroom Banner" /></a>
+				</div>
+				<div class="shopbyroomtitle">
+					<h2>Bedroom</h2>
+					<a href="#">Shop Now >></a>
+				</div>
+			</div>
+		</div><div class="clear"></div>
+		<div class="grid-100">
+			<div class="homepagetitle">
+				<h2>Get Inspired + More</h2>
+			</div>
+		</div><div class="clear"></div>
+		<div class="grid-33 tablet-grid-33">
+			<div class="shopbyroomcontent">
+				<div class="shopbyroompic">
+					<a href="#"><img src="images/homebanner6.jpg" width="378" height="325" alt="Design Center Banner" /></a>
+				</div>
+				<div class="shopbyroomtitle banner-makeyourown">
+					<h3 class="titlebackground titlebackgroundcustom">Make It Your Own</p>
+					<h2>Design Center</h2>
+					<a href="#">Learn More >></a>
+				</div>
+			</div>
+		</div>
+		<div class="grid-33 tablet-grid-33">
+			<div class="shopbyroomcontent">
+				<div class="shopbyroompic">
+					<a href="#"><img src="images/homebanner7.jpg" width="378" height="325" alt="Room Planner Banner" /></a>
+				</div>
+				<div class="shopbyroomtitle">
+					<h2>Room Planner</h2>
+					<a href="#">Create A Room >></a>
+				</div>
+			</div>
+		</div>
+		<div class="grid-33 tablet-grid-33">
+			<div class="shopbyroomcontent">
+				<div class="shopbyroompic">
+					<a href="#"><img src="images/homebanner8.jpg" width="378" height="325" alt="Promotions Banner" /></a>
+				</div>
+			</div>
+		</div><div class="clear"></div>
+		<div class="grid-100">
+			<div class="homepagetitle">
+				<h2>Why Shop With Us</h2>
+			</div>
+		</div><div class="clear"></div>
+		<div class="grid-70 tablet-grid-70">
+			<div class="homepagetext">
+				<p>Lorem ipsum dolor sit amet, justo phaedrum pro id, facilis interesset eu duo, modo virtute convenire ex duo. Quem purto signiferumque usu cu. Esse vidit latine vim ad, velit affert mollis ex his. His eu dolor veniam. Nihil tamquam accusamus ius ad. Id utroque incorrupte scriptorem has, ad eum torquatos abhorreant.</p><br />
+				<p>Ad sed eius porro corrumpit. Nostrum fabellas eum cu, has meis rebum incorrupte ea. Ad nec inani liberavisse accommodare. Vix stet novum id, est option nostrum an, hinc possit est te. Ut euismod bonorum pri.</p>
+			</div>
+		</div>
+		<div class="grid-30 tablet-grid-30">
+			<div class="homepagevideo">
+				<img src="images/video.jpg" alt="Homepage Video" />
+			</div>
+		</div>
+	</div><div class="clear"></div>
+</main>
+
+<footer>
+	<div class="footerbordertop"></div>
+	<div class="grid-container">
+		<div class="grid-80 tablet-grid-70">
+			<div class="footernav">
+				<ul>
+					<li><a href="">Hours and Location</a></li>
+					<li><a href="">Design Services</a></li>
+					<li><a href="">Room Planner</a></li>
+					<li><a href="">Current Promotions</a></li>
+					<li><a href="">Email Sign Up</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="grid-20 tablet-grid-30">
+			<div class="socialmediaicons">
+				<ul>
+					<li><a href="#"><i class="fa fa-twitter-square fa-2x"><span class="hidden">Twitter</span></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook-square fa-2x"><span class="hidden">Facebook</span></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest-square fa-2x"><span class="hidden">Pinterest</span></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram fa-2x"><span class="hidden">Instagram</span></i></a></li>
+				</ul>
+			</div>
+		</div><div class="clear"></div>
+	</div>
+	<div class="footercontenttop"></div>
+	<div class="grid-container">
+		<div class="grid-20 tablet-grid-20 push-10 tablet-push-10">
+			<div class="footercolumn">
+				<h2>Help + Info</h2>
+				<ul>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Promotions</a></li>
+					<li><a href="">Design Center</a></li>
+					<li><a href="">Room Planner</a></li>
+					<li><a href="">Brands</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="grid-20 tablet-grid-20 push-10 tablet-push-10">
+			<div class="footercolumn">
+				<h2>Shop With Us</h2>
+				<ul>
+					<li><a href="">Living Room</a></li>
+					<li><a href="">Dining Room</a></li>
+					<li><a href="">Bedroom</a></li>
+					<li><a href="">Entertainment</a></li>
+					<li><a href="">Home Office</a></li>
+					<li><a href="">Mattresses</a></li>
+					<li><a href="">Accessories</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="grid-20 tablet-grid-20 push-10 tablet-push-10">
+			<div class="footercolumn no-print">
+				<h2>Brands You Trust</h2>
+				<ul>
+					<li><a href="javascript:void(0)" id="brandslist_expand" title="View Brands">+ View All Brands</a></li>
+				</ul>
+				<div id="brandslistbox">
+					<ul>
+						<li><a href="#">Brand</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="grid-20 tablet-grid-20 push-10 tablet-push-10">
+			<div class="footercolumn" itemscope itemtype="http://schema.org/FurnitureStore">
+				<h2>Locations + Directions</h2>
+				<p>METADATASTORENAME</p>
+				<p>METADATAADDRESS<br />METADATACITY, METADATASTATE METADATAZIPCODE</p><br />
+				<p><span>888-888-8888</span><br /><a href="#"><strong>Get Directions</strong></a></p>
+			</div>
+		</div><div class="clear"></div>
+	</div>
+
+	<div class="footercontentbottom"></div>
+	<div class="grid-container">
+		<div class="grid-50  tablet-grid-75">
+			<div id="copyright">
+				<p>&copy; <script>document.write(new Date().getFullYear())</script> METADATASTORENAME | <a href="#" target="_blank">Terms of Use</a></p>
+			</div>
+		</div>
+		<div class="grid-50  tablet-grid-25">
+			<div id="seocopy" class="no-print">
+				<a href="javascript:void(0)" id="siteindex_expand" title="About METADATASTORENAME">+ About METADATASTORENAME</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid-100">
+			<div id="seocontentbox">
+				<include file="CustomerContent/SEO Copy.inc"></include>
+			</div>
+		</div>
+		<div id="scrolldiv">
+			<a href="javascript:void(0)" class="scrolltotop"><i class="fa fa-chevron-circle-up fa-3x"><span class="hidden">Back to Top</span></i></a>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+			$('#siteindex_expand').click(function(){
+				var iteration=$(this).data('iteration')||1
+				switch ( iteration) {
+					case 1:
+						$("#seocontentbox").slideDown('slow');
+						$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+						break;
+
+					case 2:
+						$("#seocontentbox").slideUp('slow');
+						break;
+				}
+				iteration++;
+				if (iteration>2) iteration=1
+				$(this).data('iteration',iteration)
+			});
+
+			$('#brandslist_expand').click(function(){
+				var iteration=$(this).data('iteration')||1
+				switch ( iteration) {
+					case 1:
+						$("#brandslistbox").slideDown('slow');
+						break;
+
+					case 2:
+						$("#brandslistbox").slideUp('slow');
+						break;
+				}
+				iteration++;
+				if (iteration>2) iteration=1
+				$(this).data('iteration',iteration)
+			});
+
+		  $("#seocontentbox").hide();
+		  $("#brandslistbox").hide();
+
+			//Check to see if the window is top if not then display button
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrolltotop').fadeIn();
+				} else {
+					$('.scrolltotop').fadeOut();
+				}
+			});
+
+			//Click event to scroll to top
+			$('.scrolltotop').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+			});
+	});
+</script>
+</body>
+</html>

@@ -1,11 +1,3 @@
-@import url('css/contactus.css');
-@import url('css/staticpage.css');
-@import url('css/designcenter.css');
-@import url('css/brands.css');
-@import url('css/category.css');
-@import url('css/mattresses.css');
-@import url('css/predesignnav.css');
-
 .hidden {
 	position:absolute;
 	left:-10000px;
@@ -26,7 +18,7 @@
 	max-width: 100%;
 	padding: 0;
 }
- 
+
 *:focus {
 	outline: none;
 }
@@ -105,7 +97,7 @@ body {
 	color: #fff;
 	z-index: 2;
 	position: relative;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .mobilebarnav li a:hover {
@@ -134,7 +126,7 @@ body {
 	top: 35px;
 	background: #000000;
 	padding-bottom: 25px;
-	z-index: 1;   
+	z-index: 1;
 }
 
 .mobilebarnav ul li ul li {
@@ -151,7 +143,7 @@ body {
 	padding: 10px;
 	display: block;
 	width: 100%;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 }
 
 .headerlogo {
@@ -320,7 +312,7 @@ body {
 	clear: both;
 }
 
-#mobilenav li:hover li a { 
+#mobilenav li:hover li a {
 	background-color: #323232;
 	position: relative;
 	border-top: 1px solid #292929;
@@ -567,7 +559,7 @@ body {
 .footercopyright p {
 	font-family: Arial, sans-serif;
 	font-size: 12px;
-	line-height: 20px; 
+	line-height: 20px;
 	color: #777;
 }
 
@@ -673,7 +665,7 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 840px){
-	
+
 	.searchbutton span {
 		padding: 8px 10px;
 	}
@@ -712,7 +704,7 @@ body {
 	.footercolumn h2 {
 		font-size: 17px;
 	}
-	
+
 }
 
 @media screen and (min-width: 841px) and (max-width: 1024px){
@@ -743,7 +735,7 @@ body {
 	.footercolumn h2 {
 		font-size: 17px;
 	}
-	
+
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1190px){
@@ -763,5 +755,5 @@ body {
 	.bannercontenttext h2 {
 		font-size: 17px;
 	}
-	
+
 }

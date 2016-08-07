@@ -1,11 +1,3 @@
-@import url('css/contactus.css');
-@import url('css/staticpage.css');
-@import url('css/designcenter.css');
-@import url('css/brands.css');
-@import url('css/category.css');
-@import url('css/mattresses.css');
-@import url('css/predesignnav.css');
-
 .hidden {
 	position:absolute;
 	left:-10000px;
@@ -27,7 +19,7 @@
 	padding: 0;
 	background: #efefef;
 }
- 
+
 *:focus {
 	outline: none;
 }
@@ -109,12 +101,12 @@ body {
 	color: #fff;
 	z-index: 2;
 	position: relative;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .mobilebarnav li a:hover {
 	color: #59baaf;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .mobilebarnav ul li ul{
@@ -137,7 +129,7 @@ body {
     top: 35px;
     background: #000000;
     padding-bottom: 25px;
-    z-index: 1;   
+    z-index: 1;
 }
 
 .mobilebarnav ul li ul li {
@@ -154,7 +146,7 @@ body {
     padding: 10px;
     display: block;
     width: 100%;
-    box-sizing: border-box;	
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -285,7 +277,7 @@ body {
 	width: 150px;
 	margin: 10px 1% 10px 1%;
 	float: left;
-} 
+}
 
 #mainnav .navcolumn h2 {
 	width: 150px;
@@ -723,7 +715,7 @@ body {
 .footercopyright p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
-	line-height: 20px; 
+	line-height: 20px;
 	color: #fff;
 }
 
@@ -766,7 +758,7 @@ body {
 	.footercolumn {
 		padding: 20px 0 10px 10px;
 	}
-	
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 915px) {
@@ -946,7 +938,7 @@ body {
 	.subbannertext {
 		min-height: 100px;
 	}
-	
+
 }
 
 @media screen and (max-width: 1202px) {
@@ -961,7 +953,7 @@ body {
 
 }
 
-@media print {    
+@media print {
     .no-print, .no-print *
     {
         display: none !important;
