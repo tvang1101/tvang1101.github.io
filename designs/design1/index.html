@@ -318,23 +318,6 @@
 <script type="text/javascript">
     $(document).ready(function(){
 
-		$('#siteindex_expand').click(function(){
-			var iteration=$(this).data('iteration')||1
-			switch ( iteration) {
-				case 1:
-					$("#seocontentbox").slideDown('slow');
-					$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-					break;
-
-				case 2:
-					$("#seocontentbox").slideUp('slow');
-					break;
-			}
-			iteration++;
-			if (iteration>2) iteration=1
-			$(this).data('iteration',iteration)
-		});
-
 		$('#brandslist_expand').click(function(){
 			var iteration=$(this).data('iteration')||1
 			switch ( iteration) {
@@ -350,14 +333,7 @@
 			if (iteration>2) iteration=1
 			$(this).data('iteration',iteration)
 		});
-
-
-	});
-  $("#seocontentbox").hide();
   $("#brandslistbox").hide();
-</script>
-<script type="text/javascript">
-	$(document).ready(function(){
 
 		//Check to see if the window is top if not then display button
 		$(window).scroll(function(){
@@ -374,10 +350,6 @@
 			return false;
 		});
 
-	});
-</script>
-<script type="text/javascript">
-$(document).ready(function () {
     $('.slideout-menu-toggle').on('click', function(event){
     	event.preventDefault();
     	// create menu variables
@@ -398,12 +370,7 @@ $(document).ready(function () {
 	    	}, 250);
     	}
     });
-});
-</script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$("#Form1").validationEngine({promptPosition : "topLeft"});
-		$("#form1").validationEngine({promptPosition : "topLeft"});
+
 	});
 </script>
 

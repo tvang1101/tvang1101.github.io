@@ -1,3 +1,7 @@
+@-ms-viewport{
+  width: device-width;
+}
+
 .hidden {
 	position:absolute;
 	left:-10000px;
@@ -149,10 +153,6 @@ body {
 }
 
 /* Header */
-
-.headercontainer {
-	margin-top: 60px;
-}
 
 .headerlogo {
 	margin: 20px 0 30px 10px;
