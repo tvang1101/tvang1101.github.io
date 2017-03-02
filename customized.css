@@ -51,6 +51,11 @@ body {
   margin: 20px 0;
 }
 
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
 @@media screen and (max-width: 767px) {
 
   .content h2 {
